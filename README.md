@@ -1,2 +1,22 @@
-# find-nearest-value-of-a-given-integer.c
-check which number is nearest to given 60 integer and return nearest value of 60
+ #include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    int diff1=60-a;
+    int diff2=60-b;
+    if(diff1<diff2)
+    {
+    printf("nearest is a %d",diff1);
+    }
+    else if(diff2<diff1)
+    {
+        printf("nearest value is b %d",diff2);
+    }
+    else
+    {
+        printf("0");
+    }
+}
+
+
